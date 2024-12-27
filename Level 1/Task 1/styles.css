@@ -38,9 +38,11 @@ header nav a {
     transition: color 0.3s ease;
 }
 
+
 header nav a:hover {
     color: #f39c12;
 }
+
 
 .hero {
     height: 100vh;
