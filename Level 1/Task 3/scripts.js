@@ -1,31 +1,31 @@
-let currentExpression = ""; // Stores the entire expression
+let currentExpression = ""; 
 
-// Append numbers or operators to the current expression
+
 function appendValue(value) {
     currentExpression += value;
     updateScreen(currentExpression);
 }
 
-// Perform the calculation using the current expression
+
 function calculate() {
     try {
-        // Evaluate the expression and round to avoid floating-point issues
+        
         const result = eval(currentExpression);
-        currentExpression = result.toString(); // Update the expression with the result
+        currentExpression = result.toString(); 
         updateScreen(currentExpression);
     } catch (error) {
-        updateScreen("Error"); // Handle invalid expressions
-        currentExpression = ""; // Reset the expression
+        updateScreen("Error"); 
+        currentExpression = ""; 
     }
 }
 
-// Clear the display and reset the expression
+
 function clearScreen() {
     currentExpression = "";
     updateScreen("0");
 }
 
-// Update the calculator display
+
 function updateScreen(value) {
     document.getElementById("screen").value = value;
 }
