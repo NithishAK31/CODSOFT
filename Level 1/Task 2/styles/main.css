@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #121212, #323232);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 2px solid #ff9800;
+}
+
+h2 {
+    text-align: center;
+    color: #ff9800;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.section-left, .section-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.section-left {
+    flex-direction: row;
+}
+
+.section-right {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.skills-logos img {
+    margin: 10px;
+    max-width: 60px;
+    height: 60px;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ff9800;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-contact, .btn-linkedin, .btn-resume {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-contact:hover, .btn-linkedin:hover, .btn-resume:hover {
+    background-color: #e68a00;
+}
+
+.buttons-right {
+    text-align: right;
+}
